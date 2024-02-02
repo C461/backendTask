@@ -7,7 +7,6 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "ES2021",
-    "types": ["superagent"],
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
