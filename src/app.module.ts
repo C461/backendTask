@@ -7,7 +7,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      `mongodb+srv://kozefra:mortadela@contacts-porfolio.sloal1k.mongodb.net/taskapp?retryWrites=true&w=majority`,
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_CLUSTER}.sloal1k.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`,
     ),
     TasksModule,
   ],
